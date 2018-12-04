@@ -1,0 +1,58 @@
+RewriteEngine On
+
+RewriteRule ^in(/?)$ lo-gin.php [L]
+RewriteRule ^in-failed(/?)$ lo-gin.php?status=gagal [L]
+
+RewriteRule ^authentication(/?)$ cekilogin.php [L]
+
+RewriteRule ^index(/?)$ index.php [L]
+
+RewriteRule ^users/add(/?)$ index.php?mod=users&act=add [L]
+RewriteRule ^users/edit/([0-9]+)(/?)$ index.php?mod=users&act=edit&id=$1 [L]
+RewriteRule ^users/reset/([0-9]+)(/?)$ index.php?mod=users&act=reset&id=$1 [L]
+RewriteRule ^users/delete/([0-9]+)(/?)$ index.php?mod=users&act=delete&id=$1 [L]
+RewriteRule ^users/alert/([0-9]+)(/?)$ index.php?mod=users&pesan=$1 [L]
+RewriteRule ^users/([0-9]+)(/?)$ index.php?mod=users&p=$1 [L]
+RewriteRule ^users(/?)$ index.php?mod=users [L]
+
+RewriteRule ^device/add(/?)$ index.php?mod=device&act=add [L]
+RewriteRule ^device/edit/([0-9]+)(/?)$ index.php?mod=device&act=edit&id=$1 [L]
+RewriteRule ^device/delete/([0-9]+)(/?)$ index.php?mod=device&act=delete&id=$1 [L]
+RewriteRule ^device/alert/([0-9]+)(/?)$ index.php?mod=device&pesan=$1 [L]
+RewriteRule ^device/([0-9]+)(/?)$ index.php?mod=device&p=$1 [L]
+RewriteRule ^device(/?)$ index.php?mod=device [L]
+
+RewriteRule ^dvc/add(/?)$ index.php?mod=dvc&act=add [L]
+RewriteRule ^dvc/edit/([0-9]+)(/?)$ index.php?mod=dvc&act=edit&id=$1 [L]
+RewriteRule ^dvc/delete/([0-9]+)(/?)$ index.php?mod=dvc&act=delete&id=$1 [L]
+RewriteRule ^dvc/alert/([0-9]+)(/?)$ index.php?mod=dvc&pesan=$1 [L]
+RewriteRule ^dvc/([0-9]+)(/?)$ index.php?mod=dvc&p=$1 [L]
+RewriteRule ^dvc(/?)$ index.php?mod=dvc [L]
+
+RewriteRule ^location/add(/?)$ index.php?mod=location&act=add [L]
+RewriteRule ^location/edit/([0-9]+)(/?)$ index.php?mod=location&act=edit&id=$1 [L]
+RewriteRule ^location/delete/([0-9]+)(/?)$ index.php?mod=location&act=delete&id=$1 [L]
+RewriteRule ^location/alert/([0-9]+)(/?)$ index.php?mod=location&pesan=$1 [L]
+RewriteRule ^location/([0-9]+)(/?)$ index.php?mod=location&p=$1 [L]
+RewriteRule ^location(/?)$ index.php?mod=location [L]
+
+RewriteRule ^peralatan/add(/?)$ index.php?mod=peralatan&act=add [L]
+RewriteRule ^peralatan/edit/([0-9]+)(/?)$ index.php?mod=peralatan&act=edit&id=$1 [L]
+RewriteRule ^peralatan/delete/([0-9]+)(/?)$ index.php?mod=peralatan&act=delete&id=$1 [L]
+RewriteRule ^peralatan/alert/([0-9]+)(/?)$ index.php?mod=peralatan&pesan=$1 [L]
+RewriteRule ^peralatan/([0-9]+)(/?)$ index.php?mod=peralatan&p=$1 [L]
+RewriteRule ^peralatan(/?)$ index.php?mod=peralatan [L]
+
+
+RewriteRule ^profile/edit(/?)$ index.php?mod=profile&act=edit [L]
+RewriteRule ^profile/reset(/?)$ index.php?mod=profile&act=reset [L]
+RewriteRule ^profile/alert/([0-9]+)(/?)$ index.php?mod=profile&pesan=$1 [L]
+RewriteRule ^profile(/?)$ index.php?mod=profile [L]
+
+RewriteRule ^ping(/?)$ index.php?mod=ping [L]
+
+RewriteRule ^log(/?)$ index.php?mod=log [L]
+
+RewriteRule ^out(/?)$ log-out.php [L]
+
+RewriteRule ^logout(/?)$ logout2.php [L]
